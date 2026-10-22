@@ -1,7 +1,7 @@
 // Project model. Field names mirror the Rust `pathless_engine::project` structs
 // (serde camelCase), so the whole object is passed to the backend as-is.
 
-export const SITE_COLORS = ['#f5b13d', '#3fa7ff', '#3ccf7a', '#ff6b9a', '#b38cff', '#4fd1c5', '#ff8a4c', '#e6e15a'];
+export const SITE_COLORS = ['#f5a524', '#3fa7ff', '#3ccf7a', '#ff6b9a', '#b38cff', '#4fd1c5', '#ff8a4c', '#e6e15a'];
 
 let counter = 0;
 export function uid(prefix) {

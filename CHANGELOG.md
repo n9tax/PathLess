@@ -13,3 +13,4 @@ First release.
   clutter loss.
 - 93 built-in antenna profiles and MSI / Planet pattern import.
 - Linux installers: .deb, .rpm, AppImage, and an Arch PKGBUILD.
+- PathLess logo and app icon.

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="512" height="512">
+  <defs>
+    <clipPath id="tile"><rect width="160" height="160" rx="36"/></clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect width="160" height="160" fill="#0E1A22"/>
+    <path fill="#1F6F64" d="M0 118 L19.75 109 L34.75 113.5 L57.25 91 L73.5 98.5 L91 80.5 L109.75 102.25 L127.25 93 L160 108.5 V160 H0 Z"/>
+    <path fill="#14473F" d="M0 134.75 L28.5 126 L48.5 132.25 L73.5 117.25 L96 127.75 L121 115.5 L160 129.75 V160 H0 Z"/>
+    <g fill="#E8EEF1">
+      <rect x="23.5" y="60.5" width="4" height="53"/>
+      <rect x="132.25" y="54.25" width="4" height="43.5"/>
+    </g>
+    <ellipse cx="79.9" cy="57.4" rx="54.4" ry="14.6" transform="rotate(-3.3 79.9 57.4)"
+             fill="#F5A524" fill-opacity="0.14" stroke="#F5A524" stroke-width="3"/>
+    <line x1="25.5" y1="60.5" x2="134.25" y2="54.25" stroke="#F5A524" stroke-width="2.5" stroke-dasharray="5.5 4"/>
+    <g fill="#E8EEF1">
+      <circle cx="25.5" cy="60.5" r="6"/>
+      <circle cx="134.25" cy="54.25" r="6"/>
+    </g>
+  </g>
+</svg>

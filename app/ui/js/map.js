@@ -59,8 +59,8 @@ export class MapView {
     const m = this.map;
     const empty = { type: 'FeatureCollection', features: [] };
     m.addSource('area', { type: 'geojson', data: empty });
-    m.addLayer({ id: 'area-fill', type: 'fill', source: 'area', paint: { 'fill-color': '#f5b13d', 'fill-opacity': 0.08 } });
-    m.addLayer({ id: 'area-line', type: 'line', source: 'area', paint: { 'line-color': '#f5b13d', 'line-width': 2, 'line-dasharray': [3, 2] } });
+    m.addLayer({ id: 'area-fill', type: 'fill', source: 'area', paint: { 'fill-color': '#f5a524', 'fill-opacity': 0.08 } });
+    m.addLayer({ id: 'area-line', type: 'line', source: 'area', paint: { 'line-color': '#f5a524', 'line-width': 2, 'line-dasharray': [3, 2] } });
     m.addSource('draft', { type: 'geojson', data: empty });
     m.addLayer({ id: 'draft-fill', type: 'fill', source: 'draft', filter: ['==', '$type', 'Polygon'], paint: { 'fill-color': '#3fa7ff', 'fill-opacity': 0.12 } });
     m.addLayer({ id: 'draft-line', type: 'line', source: 'draft', paint: { 'line-color': '#3fa7ff', 'line-width': 2 } });

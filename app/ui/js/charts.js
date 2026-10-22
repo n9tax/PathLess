@@ -107,7 +107,7 @@ export class ProfileChart {
     ctx.stroke(); ctx.setLineDash([]);
 
     // line of sight
-    ctx.strokeStyle = '#f5b13d'; ctx.lineWidth = 2;
+    ctx.strokeStyle = '#f5a524'; ctx.lineWidth = 2;
     ctx.beginPath(); ctx.moveTo(X(0), Y(p.losM[0])); ctx.lineTo(X(xmax), Y(p.losM[n - 1])); ctx.stroke();
 
     // antennas / masts
@@ -200,6 +200,6 @@ export function drawPolar(canvas, pat) {
     }
     ctx.closePath();
     ctx.fillStyle = 'rgba(245,177,61,.18)'; ctx.fill();
-    ctx.strokeStyle = '#f5b13d'; ctx.lineWidth = 1.5; ctx.stroke();
+    ctx.strokeStyle = '#f5a524'; ctx.lineWidth = 1.5; ctx.stroke();
   }
 }

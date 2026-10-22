@@ -5,7 +5,7 @@
   --line: #2a3a50;
   --text: #dbe5f0;
   --muted: #8ea2b8;
-  --accent: #f5b13d;
+  --accent: #f5a524;
   --accent2: #3fa7ff;
   --good: #3ccf7a;
   --warn: #f5c542;
@@ -24,8 +24,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   height: 46px; display: flex; align-items: center; gap: 14px; padding: 0 12px;
   background: var(--bg2); border-bottom: 1px solid var(--line);
 }
-.brand { font-weight: 700; font-size: 15px; letter-spacing: .3px; display: flex; align-items: center; gap: 8px; }
-.brand-mark { width: 18px; height: 18px; border-radius: 4px; background: linear-gradient(135deg, var(--accent), var(--accent2)); }
+.brand { height: 26px; display: block; }
 .toolbar { display: flex; gap: 6px; align-items: center; }
 .toolbar .sep { width: 1px; height: 22px; background: var(--line); margin: 0 4px; }
 .project-name { flex: 1; display: flex; justify-content: center; }

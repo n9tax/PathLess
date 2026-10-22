@@ -1,6 +1,14 @@
-# PathLess
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/brand/pathless-logo-dark.svg">
+    <img src="docs/brand/pathless-logo-light.svg" alt="PathLess — RF path &amp; coverage analysis" width="440">
+  </picture>
+</h1>
 
-[![CI](https://github.com/n9tax/PathLess/actions/workflows/ci.yml/badge.svg)](https://github.com/n9tax/PathLess/actions/workflows/ci.yml)
+<p align="center">
+  <a href="https://github.com/n9tax/PathLess/actions/workflows/ci.yml"><img src="https://github.com/n9tax/PathLess/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/n9tax/PathLess/releases"><img src="https://img.shields.io/github/v/release/n9tax/PathLess?include_prereleases" alt="Release"></a>
+</p>
 
 RF path and coverage analysis for Linux that finds its own data. Draw a
 polygon on the map and PathLess works out which USGS 3DEP elevation and NLCD
@@ -84,6 +92,11 @@ cd app/src-tauri && cargo tauri build
 # output: target/release/bundle/{deb,rpm,appimage}/
 ```
 
+If `cargo install tauri-cli` fails with rustc crashing (`SIGSEGV`, "you can
+increase rustc's stack size") while compiling the `rpm` crate, retry with a
+bigger compiler stack:
+`RUST_MIN_STACK=33554432 cargo install tauri-cli --version "^2" --locked`.
+
 Installers built on a rolling-release distribution link against its newer
 glibc and won't install on older systems; release builds are made on
 Ubuntu 22.04 by the [release workflow](.github/workflows/release.yml), which
@@ -100,6 +113,7 @@ runs when a `v*` tag is pushed.
 | `app/src-tauri` | Tauri desktop shell (IPC commands) |
 | `app/ui` | Map UI: plain ES modules + vendored MapLibre GL JS (no Node build step) |
 | `packaging/arch` | PKGBUILD for Arch-based distributions |
+| `docs/brand` | Logo, icon and brand sheet |
 
 ## Accuracy notes
 
@@ -121,6 +135,9 @@ runs when a `v*` tag is pushed.
 - [NLCD](https://www.mrlc.gov/) (Multi-Resolution Land Characteristics
   Consortium): land cover, via the MRLC GeoServer WCS (public domain).
 - Basemaps: USGS The National Map and © OpenStreetMap contributors.
+- Logo and icon: `docs/brand/` (the wordmark uses
+  [Space Grotesk](https://github.com/floriankarsten/space-grotesk), SIL OFL 1.1,
+  converted to outlines).
 - [MapLibre GL JS](https://maplibre.org/) is vendored under
   `app/ui/vendor/maplibre` (BSD-3-Clause, see its `LICENSE.txt`).
 - The ITM implementation follows the
