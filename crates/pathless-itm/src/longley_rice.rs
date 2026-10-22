@@ -126,13 +126,12 @@ pub(crate) fn longley_rice(
         // [ERL 79-ITS 67, Eqn 3.16a], in meters instead of km and with MIN() part below
         let mut d_0_m = 0.04 * f_mhz * h_e_m[0] * h_e_m[1];
 
-        let d_1_m;
-        if a_d0_db >= 0.0 {
+        let d_1_m = if a_d0_db >= 0.0 {
             d_0_m = min(d_0_m, 0.5 * d_ml_m); // other part of [ERL 79-ITS 67, Eqn 3.16a]
-            d_1_m = d_0_m + 0.25 * (d_ml_m - d_0_m); // [ERL 79-ITS 67, Eqn 3.16d]
+            d_0_m + 0.25 * (d_ml_m - d_0_m) // [ERL 79-ITS 67, Eqn 3.16d]
         } else {
-            d_1_m = max(-a_d0_db / m_d, 0.25 * d_ml_m);
-        }
+            max(-a_d0_db / m_d, 0.25 * d_ml_m)
+        };
 
         let a_1_db = line_of_sight_loss(d_1_m, h_e_m, z_g, delta_h_m, m_d, a_d0_db, d_sml_m, f_mhz);
 
