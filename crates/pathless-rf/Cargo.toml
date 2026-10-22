@@ -1,0 +1,12 @@
+[package]
+name = "pathless-rf"
+description = "Pure-Rust RF math, ITU-R propagation models, link budget helpers and antenna patterns for PathLess"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }

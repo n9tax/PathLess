@@ -1,0 +1,1229 @@
+[
+  {
+    "id": "isotropic",
+    "name": "Isotropic reference (0 dBi)",
+    "category": "Dipole",
+    "min_mhz": 1,
+    "max_mhz": 100000,
+    "kind": {
+      "type": "isotropic"
+    },
+    "notes": "Ideal reference radiator."
+  },
+  {
+    "id": "dipole-halfwave",
+    "name": "Half-wave dipole (2.15 dBi)",
+    "category": "Dipole",
+    "min_mhz": 30,
+    "max_mhz": 6000,
+    "kind": {
+      "type": "dipole"
+    },
+    "notes": "Vertical lambda/2 dipole."
+  },
+  {
+    "id": "whip-unity-vhf",
+    "name": "Unity-gain whip, VHF 136-174 MHz (0 dBd)",
+    "category": "Dipole",
+    "min_mhz": 136,
+    "max_mhz": 174,
+    "kind": {
+      "type": "dipole"
+    },
+    "notes": "Mobile/base unity-gain whip modelled as a vertical half-wave dipole (2.15 dBi)."
+  },
+  {
+    "id": "whip-unity-uhf",
+    "name": "Unity-gain whip, UHF 400-520 MHz (0 dBd)",
+    "category": "Dipole",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "dipole"
+    },
+    "notes": "Modelled as a vertical half-wave dipole (2.15 dBi)."
+  },
+  {
+    "id": "whip-unity-700-900",
+    "name": "Unity-gain whip, 700-960 MHz (0 dBd)",
+    "category": "Dipole",
+    "min_mhz": 698,
+    "max_mhz": 960,
+    "kind": {
+      "type": "dipole"
+    },
+    "notes": "Modelled as a vertical half-wave dipole (2.15 dBi)."
+  },
+  {
+    "id": "gp-quarterwave-vhf",
+    "name": "1/4-wave ground plane, VHF 136-174 MHz",
+    "category": "Dipole",
+    "min_mhz": 136,
+    "max_mhz": 174,
+    "kind": {
+      "type": "dipole"
+    },
+    "notes": "Quarter-wave ground plane; azimuth-omni, approximated by a half-wave dipole pattern."
+  },
+  {
+    "id": "gp-quarterwave-uhf",
+    "name": "1/4-wave ground plane, UHF 400-520 MHz",
+    "category": "Dipole",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "dipole"
+    },
+    "notes": "Quarter-wave ground plane; approximated by a half-wave dipole pattern."
+  },
+  {
+    "id": "omni-vhf-3dbi",
+    "name": "Omni 3 dBi, VHF 136-174 MHz",
+    "category": "Omni",
+    "min_mhz": 136,
+    "max_mhz": 174,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 3.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-vhf-6dbi",
+    "name": "Omni 6 dBi, VHF 136-174 MHz",
+    "category": "Omni",
+    "min_mhz": 136,
+    "max_mhz": 174,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 6.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-vhf-9dbi",
+    "name": "Omni 9 dBi, VHF 136-174 MHz",
+    "category": "Omni",
+    "min_mhz": 136,
+    "max_mhz": 174,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 9.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-220-3dbi",
+    "name": "Omni 3 dBi, 1.25 m 216-225 MHz",
+    "category": "Omni",
+    "min_mhz": 216,
+    "max_mhz": 225,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 3.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-220-6dbi",
+    "name": "Omni 6 dBi, 1.25 m 216-225 MHz",
+    "category": "Omni",
+    "min_mhz": 216,
+    "max_mhz": 225,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 6.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-220-9dbi",
+    "name": "Omni 9 dBi, 1.25 m 216-225 MHz",
+    "category": "Omni",
+    "min_mhz": 216,
+    "max_mhz": 225,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 9.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-uhf-3dbi",
+    "name": "Omni 3 dBi, UHF 400-520 MHz",
+    "category": "Omni",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 3.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-uhf-6dbi",
+    "name": "Omni 6 dBi, UHF 400-520 MHz",
+    "category": "Omni",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 6.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-uhf-9dbi",
+    "name": "Omni 9 dBi, UHF 400-520 MHz",
+    "category": "Omni",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 9.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-uhf-12dbi",
+    "name": "Omni 12 dBi, UHF 400-520 MHz",
+    "category": "Omni",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 12.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-700-800-3dbi",
+    "name": "Omni 3 dBi, 700/800 MHz 698-870 MHz",
+    "category": "Omni",
+    "min_mhz": 698,
+    "max_mhz": 870,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 3.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-700-800-6dbi",
+    "name": "Omni 6 dBi, 700/800 MHz 698-870 MHz",
+    "category": "Omni",
+    "min_mhz": 698,
+    "max_mhz": 870,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 6.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-700-800-9dbi",
+    "name": "Omni 9 dBi, 700/800 MHz 698-870 MHz",
+    "category": "Omni",
+    "min_mhz": 698,
+    "max_mhz": 870,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 9.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-700-800-12dbi",
+    "name": "Omni 12 dBi, 700/800 MHz 698-870 MHz",
+    "category": "Omni",
+    "min_mhz": 698,
+    "max_mhz": 870,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 12.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-900-3dbi",
+    "name": "Omni 3 dBi, 900 MHz 880-960 MHz",
+    "category": "Omni",
+    "min_mhz": 880,
+    "max_mhz": 960,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 3.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-900-6dbi",
+    "name": "Omni 6 dBi, 900 MHz 880-960 MHz",
+    "category": "Omni",
+    "min_mhz": 880,
+    "max_mhz": 960,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 6.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-900-9dbi",
+    "name": "Omni 9 dBi, 900 MHz 880-960 MHz",
+    "category": "Omni",
+    "min_mhz": 880,
+    "max_mhz": 960,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 9.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-900-12dbi",
+    "name": "Omni 12 dBi, 900 MHz 880-960 MHz",
+    "category": "Omni",
+    "min_mhz": 880,
+    "max_mhz": 960,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 12.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-2g4-3dbi",
+    "name": "Omni 3 dBi, 2.4 GHz 2400-2500 MHz",
+    "category": "Omni",
+    "min_mhz": 2400,
+    "max_mhz": 2500,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 3.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-2g4-6dbi",
+    "name": "Omni 6 dBi, 2.4 GHz 2400-2500 MHz",
+    "category": "Omni",
+    "min_mhz": 2400,
+    "max_mhz": 2500,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 6.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-2g4-9dbi",
+    "name": "Omni 9 dBi, 2.4 GHz 2400-2500 MHz",
+    "category": "Omni",
+    "min_mhz": 2400,
+    "max_mhz": 2500,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 9.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-2g4-12dbi",
+    "name": "Omni 12 dBi, 2.4 GHz 2400-2500 MHz",
+    "category": "Omni",
+    "min_mhz": 2400,
+    "max_mhz": 2500,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 12.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-3g5-6dbi",
+    "name": "Omni 6 dBi, 3.5 GHz CBRS 3300-3800 MHz",
+    "category": "Omni",
+    "min_mhz": 3300,
+    "max_mhz": 3800,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 6.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-3g5-9dbi",
+    "name": "Omni 9 dBi, 3.5 GHz CBRS 3300-3800 MHz",
+    "category": "Omni",
+    "min_mhz": 3300,
+    "max_mhz": 3800,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 9.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-3g5-12dbi",
+    "name": "Omni 12 dBi, 3.5 GHz CBRS 3300-3800 MHz",
+    "category": "Omni",
+    "min_mhz": 3300,
+    "max_mhz": 3800,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 12.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-5g-3dbi",
+    "name": "Omni 3 dBi, 5 GHz 5150-5925 MHz",
+    "category": "Omni",
+    "min_mhz": 5150,
+    "max_mhz": 5925,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 3.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-5g-6dbi",
+    "name": "Omni 6 dBi, 5 GHz 5150-5925 MHz",
+    "category": "Omni",
+    "min_mhz": 5150,
+    "max_mhz": 5925,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 6.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-5g-9dbi",
+    "name": "Omni 9 dBi, 5 GHz 5150-5925 MHz",
+    "category": "Omni",
+    "min_mhz": 5150,
+    "max_mhz": 5925,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 9.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "omni-5g-12dbi",
+    "name": "Omni 12 dBi, 5 GHz 5150-5925 MHz",
+    "category": "Omni",
+    "min_mhz": 5150,
+    "max_mhz": 5925,
+    "kind": {
+      "type": "omni",
+      "gain_dbi": 12.0
+    },
+    "notes": "ITU-R F.1336-5 omnidirectional pattern; elevation beamwidth from 107.6*10^(-G/10)."
+  },
+  {
+    "id": "sector-700-900-65deg",
+    "name": "Sector 65deg 15 dBi, 698-960 MHz",
+    "category": "Sector",
+    "min_mhz": 698,
+    "max_mhz": 960,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 15.0,
+      "h_beamwidth_deg": 65.0,
+      "front_to_back_db": 25.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-700-900-90deg",
+    "name": "Sector 90deg 13.5 dBi, 698-960 MHz",
+    "category": "Sector",
+    "min_mhz": 698,
+    "max_mhz": 960,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 13.5,
+      "h_beamwidth_deg": 90.0,
+      "front_to_back_db": 25.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-700-900-120deg",
+    "name": "Sector 120deg 12 dBi, 698-960 MHz",
+    "category": "Sector",
+    "min_mhz": 698,
+    "max_mhz": 960,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 12.0,
+      "h_beamwidth_deg": 120.0,
+      "front_to_back_db": 25.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-1700-2100-65deg",
+    "name": "Sector 65deg 18 dBi, 1.7-2.2 GHz (AWS/PCS)",
+    "category": "Sector",
+    "min_mhz": 1695,
+    "max_mhz": 2200,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 18.0,
+      "h_beamwidth_deg": 65.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-1700-2100-90deg",
+    "name": "Sector 90deg 16.5 dBi, 1.7-2.2 GHz (AWS/PCS)",
+    "category": "Sector",
+    "min_mhz": 1695,
+    "max_mhz": 2200,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 16.5,
+      "h_beamwidth_deg": 90.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-1700-2100-120deg",
+    "name": "Sector 120deg 15 dBi, 1.7-2.2 GHz (AWS/PCS)",
+    "category": "Sector",
+    "min_mhz": 1695,
+    "max_mhz": 2200,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 15.0,
+      "h_beamwidth_deg": 120.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-2500-65deg",
+    "name": "Sector 65deg 18 dBi, 2.5 GHz (2496-2690)",
+    "category": "Sector",
+    "min_mhz": 2496,
+    "max_mhz": 2690,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 18.0,
+      "h_beamwidth_deg": 65.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-2500-90deg",
+    "name": "Sector 90deg 16.5 dBi, 2.5 GHz (2496-2690)",
+    "category": "Sector",
+    "min_mhz": 2496,
+    "max_mhz": 2690,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 16.5,
+      "h_beamwidth_deg": 90.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-2500-120deg",
+    "name": "Sector 120deg 15 dBi, 2.5 GHz (2496-2690)",
+    "category": "Sector",
+    "min_mhz": 2496,
+    "max_mhz": 2690,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 15.0,
+      "h_beamwidth_deg": 120.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-3500-65deg",
+    "name": "Sector 65deg 18 dBi, 3.5 GHz CBRS (3300-3800)",
+    "category": "Sector",
+    "min_mhz": 3300,
+    "max_mhz": 3800,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 18.0,
+      "h_beamwidth_deg": 65.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-3500-90deg",
+    "name": "Sector 90deg 17 dBi, 3.5 GHz CBRS (3300-3800)",
+    "category": "Sector",
+    "min_mhz": 3300,
+    "max_mhz": 3800,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 17.0,
+      "h_beamwidth_deg": 90.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-3500-120deg",
+    "name": "Sector 120deg 16 dBi, 3.5 GHz CBRS (3300-3800)",
+    "category": "Sector",
+    "min_mhz": 3300,
+    "max_mhz": 3800,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 16.0,
+      "h_beamwidth_deg": 120.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-5g-65deg",
+    "name": "Sector 65deg 19 dBi, 5 GHz (5150-5925)",
+    "category": "Sector",
+    "min_mhz": 5150,
+    "max_mhz": 5925,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 19.0,
+      "h_beamwidth_deg": 65.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-5g-90deg",
+    "name": "Sector 90deg 18 dBi, 5 GHz (5150-5925)",
+    "category": "Sector",
+    "min_mhz": 5150,
+    "max_mhz": 5925,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 18.0,
+      "h_beamwidth_deg": 90.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-5g-120deg",
+    "name": "Sector 120deg 16 dBi, 5 GHz (5150-5925)",
+    "category": "Sector",
+    "min_mhz": 5150,
+    "max_mhz": 5925,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 16.0,
+      "h_beamwidth_deg": 120.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-6g-65deg",
+    "name": "Sector 65deg 19 dBi, 6 GHz (5925-7125)",
+    "category": "Sector",
+    "min_mhz": 5925,
+    "max_mhz": 7125,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 19.0,
+      "h_beamwidth_deg": 65.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-6g-90deg",
+    "name": "Sector 90deg 18 dBi, 6 GHz (5925-7125)",
+    "category": "Sector",
+    "min_mhz": 5925,
+    "max_mhz": 7125,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 18.0,
+      "h_beamwidth_deg": 90.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-6g-120deg",
+    "name": "Sector 120deg 16 dBi, 6 GHz (5925-7125)",
+    "category": "Sector",
+    "min_mhz": 5925,
+    "max_mhz": 7125,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 16.0,
+      "h_beamwidth_deg": 120.0,
+      "front_to_back_db": 28.0
+    },
+    "notes": "ITU-R F.1336-5 sectoral pattern (typical side-lobes); vertical beamwidth from F.1336 eq. (3a)."
+  },
+  {
+    "id": "sector-900-90deg-wisp",
+    "name": "Sector 90deg 13 dBi, 900 MHz WISP (902-928)",
+    "category": "Sector",
+    "min_mhz": 902,
+    "max_mhz": 928,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 13.0,
+      "h_beamwidth_deg": 90.0,
+      "front_to_back_db": 20.0
+    },
+    "notes": "Unlicensed 900 MHz sector."
+  },
+  {
+    "id": "sector-2g4-120deg-wisp",
+    "name": "Sector 120deg 15 dBi, 2.4 GHz",
+    "category": "Sector",
+    "min_mhz": 2400,
+    "max_mhz": 2500,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 15.0,
+      "h_beamwidth_deg": 120.0,
+      "front_to_back_db": 25.0
+    },
+    "notes": "Unlicensed 2.4 GHz sector."
+  },
+  {
+    "id": "panel-uhf-10dbi",
+    "name": "Panel 10 dBi 60deg, UHF 400-520 MHz",
+    "category": "Panel",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 10.0,
+      "h_beamwidth_deg": 60.0,
+      "front_to_back_db": 20.0
+    },
+    "notes": "Directional panel, ITU-R F.1336-5 sectoral pattern."
+  },
+  {
+    "id": "panel-900-12dbi",
+    "name": "Panel 12 dBi 60deg, 880-960 MHz",
+    "category": "Panel",
+    "min_mhz": 880,
+    "max_mhz": 960,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 12.0,
+      "h_beamwidth_deg": 60.0,
+      "front_to_back_db": 22.0
+    },
+    "notes": "Directional panel, ITU-R F.1336-5 sectoral pattern."
+  },
+  {
+    "id": "panel-2g4-14dbi",
+    "name": "Panel 14 dBi 30deg, 2.4 GHz",
+    "category": "Panel",
+    "min_mhz": 2400,
+    "max_mhz": 2500,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 14.0,
+      "h_beamwidth_deg": 30.0,
+      "front_to_back_db": 25.0,
+      "v_beamwidth_deg": 30.0
+    },
+    "notes": "Directional panel, ITU-R F.1336-5 sectoral pattern."
+  },
+  {
+    "id": "panel-3g5-17dbi",
+    "name": "Panel 17 dBi 20deg, 3.5 GHz CBRS",
+    "category": "Panel",
+    "min_mhz": 3300,
+    "max_mhz": 3800,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 17.0,
+      "h_beamwidth_deg": 20.0,
+      "front_to_back_db": 28.0,
+      "v_beamwidth_deg": 20.0
+    },
+    "notes": "Directional panel, ITU-R F.1336-5 sectoral pattern."
+  },
+  {
+    "id": "panel-5g-19dbi",
+    "name": "Panel 19 dBi 18deg, 5 GHz",
+    "category": "Panel",
+    "min_mhz": 5150,
+    "max_mhz": 5925,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 19.0,
+      "h_beamwidth_deg": 18.0,
+      "front_to_back_db": 28.0,
+      "v_beamwidth_deg": 18.0
+    },
+    "notes": "Directional panel, ITU-R F.1336-5 sectoral pattern."
+  },
+  {
+    "id": "panel-5g-23dbi",
+    "name": "Flat panel 23 dBi 9deg, 5 GHz",
+    "category": "Panel",
+    "min_mhz": 5150,
+    "max_mhz": 5925,
+    "kind": {
+      "type": "sector",
+      "gain_dbi": 23.0,
+      "h_beamwidth_deg": 9.0,
+      "front_to_back_db": 30.0,
+      "v_beamwidth_deg": 9.0
+    },
+    "notes": "Directional panel, ITU-R F.1336-5 sectoral pattern."
+  },
+  {
+    "id": "yagi-vhf-3el",
+    "name": "Yagi 3-element 7 dBi, VHF 136-174 MHz",
+    "category": "Yagi",
+    "min_mhz": 136,
+    "max_mhz": 174,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 7.0,
+      "front_to_back_db": 15.0,
+      "sidelobe_db": 12.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-vhf-6el",
+    "name": "Yagi 6-element 10 dBi, VHF 136-174 MHz",
+    "category": "Yagi",
+    "min_mhz": 136,
+    "max_mhz": 174,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 10.0,
+      "front_to_back_db": 18.0,
+      "sidelobe_db": 14.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-vhf-9el",
+    "name": "Yagi 9-element 12 dBi, VHF 136-174 MHz",
+    "category": "Yagi",
+    "min_mhz": 136,
+    "max_mhz": 174,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 12.0,
+      "front_to_back_db": 20.0,
+      "sidelobe_db": 15.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-vhf-13el",
+    "name": "Yagi 13-element 14 dBi, VHF 136-174 MHz",
+    "category": "Yagi",
+    "min_mhz": 136,
+    "max_mhz": 174,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 14.0,
+      "front_to_back_db": 22.0,
+      "sidelobe_db": 16.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-uhf-3el",
+    "name": "Yagi 3-element 7 dBi, UHF 400-520 MHz",
+    "category": "Yagi",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 7.0,
+      "front_to_back_db": 15.0,
+      "sidelobe_db": 12.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-uhf-6el",
+    "name": "Yagi 6-element 10 dBi, UHF 400-520 MHz",
+    "category": "Yagi",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 10.0,
+      "front_to_back_db": 18.0,
+      "sidelobe_db": 14.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-uhf-9el",
+    "name": "Yagi 9-element 12 dBi, UHF 400-520 MHz",
+    "category": "Yagi",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 12.0,
+      "front_to_back_db": 20.0,
+      "sidelobe_db": 15.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-uhf-13el",
+    "name": "Yagi 13-element 14 dBi, UHF 400-520 MHz",
+    "category": "Yagi",
+    "min_mhz": 400,
+    "max_mhz": 520,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 14.0,
+      "front_to_back_db": 22.0,
+      "sidelobe_db": 16.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-900-3el",
+    "name": "Yagi 3-element 7 dBi, 880-960 MHz",
+    "category": "Yagi",
+    "min_mhz": 880,
+    "max_mhz": 960,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 7.0,
+      "front_to_back_db": 15.0,
+      "sidelobe_db": 12.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-900-6el",
+    "name": "Yagi 6-element 10 dBi, 880-960 MHz",
+    "category": "Yagi",
+    "min_mhz": 880,
+    "max_mhz": 960,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 10.0,
+      "front_to_back_db": 18.0,
+      "sidelobe_db": 14.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-900-9el",
+    "name": "Yagi 9-element 12 dBi, 880-960 MHz",
+    "category": "Yagi",
+    "min_mhz": 880,
+    "max_mhz": 960,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 12.0,
+      "front_to_back_db": 20.0,
+      "sidelobe_db": 15.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "yagi-900-13el",
+    "name": "Yagi 13-element 14 dBi, 880-960 MHz",
+    "category": "Yagi",
+    "min_mhz": 880,
+    "max_mhz": 960,
+    "kind": {
+      "type": "yagi",
+      "gain_dbi": 14.0,
+      "front_to_back_db": 22.0,
+      "sidelobe_db": 16.0
+    },
+    "notes": "Empirical yagi pattern (Gaussian main lobe, side-lobe plateau, F/B ramp)."
+  },
+  {
+    "id": "dish-0.3m",
+    "name": "Parabolic dish 0.3 m (licensed microwave)",
+    "category": "Dish",
+    "min_mhz": 1000,
+    "max_mhz": 86000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.3,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain 10log(0.55(pi D/lambda)^2) at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "dish-0.6m",
+    "name": "Parabolic dish 0.6 m (licensed microwave)",
+    "category": "Dish",
+    "min_mhz": 1000,
+    "max_mhz": 86000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.6,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain 10log(0.55(pi D/lambda)^2) at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "dish-0.9m",
+    "name": "Parabolic dish 0.9 m (licensed microwave)",
+    "category": "Dish",
+    "min_mhz": 1000,
+    "max_mhz": 86000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.9,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain 10log(0.55(pi D/lambda)^2) at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "dish-1.2m",
+    "name": "Parabolic dish 1.2 m (licensed microwave)",
+    "category": "Dish",
+    "min_mhz": 1000,
+    "max_mhz": 86000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 1.2,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain 10log(0.55(pi D/lambda)^2) at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "dish-1.8m",
+    "name": "Parabolic dish 1.8 m (licensed microwave)",
+    "category": "Dish",
+    "min_mhz": 1000,
+    "max_mhz": 86000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 1.8,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain 10log(0.55(pi D/lambda)^2) at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "dish-2.4m",
+    "name": "Parabolic dish 2.4 m (licensed microwave)",
+    "category": "Dish",
+    "min_mhz": 1000,
+    "max_mhz": 86000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 2.4,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain 10log(0.55(pi D/lambda)^2) at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "dish-3m",
+    "name": "Parabolic dish 3 m (licensed microwave)",
+    "category": "Dish",
+    "min_mhz": 1000,
+    "max_mhz": 86000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 3.0,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain 10log(0.55(pi D/lambda)^2) at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "dish-0.3m-avg",
+    "name": "Parabolic dish 0.3 m, average side-lobes (F.1245)",
+    "category": "Dish",
+    "min_mhz": 1000,
+    "max_mhz": 86000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.3,
+      "efficiency": 0.55,
+      "envelope": "F1245Average"
+    },
+    "notes": "ITU-R F.1245-3 average pattern, for aggregate interference studies."
+  },
+  {
+    "id": "dish-0.6m-avg",
+    "name": "Parabolic dish 0.6 m, average side-lobes (F.1245)",
+    "category": "Dish",
+    "min_mhz": 1000,
+    "max_mhz": 86000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.6,
+      "efficiency": 0.55,
+      "envelope": "F1245Average"
+    },
+    "notes": "ITU-R F.1245-3 average pattern, for aggregate interference studies."
+  },
+  {
+    "id": "dish-1.2m-avg",
+    "name": "Parabolic dish 1.2 m, average side-lobes (F.1245)",
+    "category": "Dish",
+    "min_mhz": 1000,
+    "max_mhz": 86000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 1.2,
+      "efficiency": 0.55,
+      "envelope": "F1245Average"
+    },
+    "notes": "ITU-R F.1245-3 average pattern, for aggregate interference studies."
+  },
+  {
+    "id": "dish-5g-0.4m",
+    "name": "WISP dish 0.4 m (~25 dBi), 5 GHz",
+    "category": "Dish",
+    "min_mhz": 4900,
+    "max_mhz": 6400,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.4,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain from diameter and efficiency at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "dish-5g-0.6m",
+    "name": "WISP dish 0.6 m (~29 dBi), 5 GHz",
+    "category": "Dish",
+    "min_mhz": 4900,
+    "max_mhz": 6400,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.6,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain from diameter and efficiency at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "dish-5g-0.9m",
+    "name": "WISP dish 0.9 m (~32 dBi), 5 GHz",
+    "category": "Dish",
+    "min_mhz": 4900,
+    "max_mhz": 6400,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.9,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain from diameter and efficiency at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "dish-6g-0.6m",
+    "name": "Dish 0.6 m (~30 dBi), 6 GHz unlicensed/licensed",
+    "category": "Dish",
+    "min_mhz": 5925,
+    "max_mhz": 7125,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.6,
+      "efficiency": 0.55,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain from diameter and efficiency at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "grid-900-1.2m",
+    "name": "Grid parabolic 1.2 m (~18 dBi), 900 MHz",
+    "category": "Dish",
+    "min_mhz": 880,
+    "max_mhz": 960,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 1.2,
+      "efficiency": 0.45,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain from diameter and efficiency at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "grid-2g4-0.9m",
+    "name": "Grid parabolic 0.9 m (~24 dBi), 2.4 GHz",
+    "category": "Dish",
+    "min_mhz": 2300,
+    "max_mhz": 2700,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.9,
+      "efficiency": 0.45,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain from diameter and efficiency at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "grid-2g4-1.2m",
+    "name": "Grid parabolic 1.2 m (~27 dBi), 2.4 GHz",
+    "category": "Dish",
+    "min_mhz": 2300,
+    "max_mhz": 2700,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 1.2,
+      "efficiency": 0.45,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain from diameter and efficiency at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "grid-5g-0.6m",
+    "name": "Grid parabolic 0.6 m (~28 dBi), 5 GHz",
+    "category": "Dish",
+    "min_mhz": 4900,
+    "max_mhz": 6000,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.6,
+      "efficiency": 0.45,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain from diameter and efficiency at the analysis frequency; ITU-R F.699-9 envelope."
+  },
+  {
+    "id": "grid-3g5-0.9m",
+    "name": "Grid parabolic 0.9 m (~27 dBi), 3.5 GHz",
+    "category": "Dish",
+    "min_mhz": 3300,
+    "max_mhz": 3800,
+    "kind": {
+      "type": "dish",
+      "diameter_m": 0.9,
+      "efficiency": 0.45,
+      "envelope": "F699Peak"
+    },
+    "notes": "Gain from diameter and efficiency at the analysis frequency; ITU-R F.699-9 envelope."
+  }
+]

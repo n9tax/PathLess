@@ -1,0 +1,23 @@
+[package]
+name = "pathless-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "PathLess analysis engine: point-to-point links and area coverage"
+
+[dependencies]
+pathless-itm = { path = "../pathless-itm" }
+pathless-rf = { path = "../pathless-rf" }
+pathless-data = { path = "../pathless-data" }
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+rayon.workspace = true
+png.workspace = true
+tracing.workspace = true
+base64 = "0.22"
+
+[dev-dependencies]
+tokio.workspace = true

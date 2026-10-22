@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PathLess</title>
+  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/maplibre/maplibre-gl.js"></script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header id="topbar">
+    <div class="brand"><span class="brand-mark"></span>PathLess</div>
+    <div class="toolbar" id="toolbar">
+      <button data-mode="drawArea" title="Draw the study area polygon (click to add points, double-click or Enter to finish, Esc to cancel)">▱ Draw area</button>
+      <button data-mode="addSite" title="Click the map to place a site">⊕ Add site</button>
+      <button data-mode="addLink" title="Click two sites to create a link">⟷ Add link</button>
+      <span class="sep"></span>
+      <button id="btn-fetch" class="primary" title="Download terrain and clutter for the study area">⇩ Fetch data</button>
+    </div>
+    <div class="project-name"><input id="project-name" value="Untitled project" spellcheck="false"></div>
+    <div class="toolbar">
+      <button id="btn-new" title="New project">New</button>
+      <button id="btn-open" title="Open project">Open…</button>
+      <button id="btn-save" title="Save project">Save…</button>
+    </div>
+  </header>
+
+  <main>
+    <aside id="sidebar">
+      <nav id="tabs">
+        <button data-tab="project" class="active">Project</button>
+        <button data-tab="sites">Sites</button>
+        <button data-tab="links">Links</button>
+        <button data-tab="coverage">Coverage</button>
+        <button data-tab="antennas">Antennas</button>
+        <button data-tab="environment">Environment</button>
+      </nav>
+      <div id="panel"></div>
+    </aside>
+
+    <section id="mapwrap">
+      <div id="map"></div>
+      <div id="mode-hint" class="hidden"></div>
+      <div id="map-controls">
+        <select id="basemap" title="Basemap"></select>
+        <label class="chk"><input type="checkbox" id="ov-hillshade"> Hillshade</label>
+        <label class="chk"><input type="checkbox" id="ov-nlcd"> Land cover</label>
+        <label class="chk"><input type="checkbox" id="ov-coverage" checked> Coverage</label>
+        <input type="range" id="ov-opacity" min="0" max="100" value="70" title="Coverage opacity">
+      </div>
+      <div id="legend" class="hidden"></div>
+      <div id="cursor-readout"></div>
+      <div id="drawer" class="hidden">
+        <div class="drawer-head">
+          <strong id="drawer-title">Path profile</strong>
+          <div class="drawer-actions">
+            <button id="drawer-close" title="Close">✕</button>
+          </div>
+        </div>
+        <div class="drawer-body">
+          <div class="chart-wrap"><canvas id="profile-canvas"></canvas><div id="profile-tip" class="hidden"></div></div>
+          <div id="link-results"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="busy" class="hidden">
+    <div class="busy-card">
+      <div id="busy-title">Working…</div>
+      <div class="bar"><div id="busy-bar"></div></div>
+      <div id="busy-msg"></div>
+    </div>
+  </div>
+  <div id="toasts"></div>
+</body>
+</html>

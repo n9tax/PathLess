@@ -1,0 +1,9 @@
+/target
+**/node_modules
+*.swp
+/scratch
+/app/src-tauri/gen/schemas
+
+# Local-only notes
+GIT_Rules_for_Claude.txt
+CLAUDE.md

@@ -1,0 +1,23 @@
+[package]
+name = "pathless"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors = ["The PathLess Authors"]
+description = "RF path analysis with automatic terrain and clutter data"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+directories.workspace = true
+pathless-engine = { path = "../../crates/pathless-engine" }
+pathless-rf = { path = "../../crates/pathless-rf" }

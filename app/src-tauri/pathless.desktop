@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Utility;HamRadio;Science;
+Comment={{comment}}
+Exec={{exec}}
+StartupWMClass={{exec}}
+Icon={{icon}}
+Name=PathLess
+GenericName=RF Path Analysis
+Keywords=RF;radio;propagation;coverage;link;microwave;Longley-Rice;terrain;
+Terminal=false
+Type=Application

@@ -1,0 +1,52 @@
+# Builds PathLess from the tagged release source.
+pkgname=pathless
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="RF path and coverage analysis with automatic USGS terrain and clutter data"
+arch=('x86_64' 'aarch64')
+url="https://github.com/n9tax/PathLess"
+license=('MIT OR Apache-2.0')
+depends=('webkit2gtk-4.1' 'gtk3' 'hicolor-icon-theme')
+makedepends=('cargo' 'git')
+options=('!lto')
+source=("$pkgname::git+$url.git#tag=v$pkgver")
+sha256sums=('SKIP')
+
+prepare() {
+  cd "$pkgname"
+  export RUSTUP_TOOLCHAIN=stable
+  cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
+}
+
+build() {
+  cd "$pkgname"
+  export RUSTUP_TOOLCHAIN=stable
+  export CARGO_TARGET_DIR=target
+  # tauri/custom-protocol embeds the UI into the binary (what `cargo tauri build` does).
+  cargo build --frozen --release -p pathless --features tauri/custom-protocol
+}
+
+check() {
+  cd "$pkgname"
+  export RUSTUP_TOOLCHAIN=stable
+  cargo test --frozen --release --workspace
+}
+
+package() {
+  cd "$pkgname"
+  install -Dm755 target/release/pathless "$pkgdir/usr/bin/pathless"
+  install -Dm644 app/src-tauri/icons/128x128.png "$pkgdir/usr/share/icons/hicolor/128x128/apps/pathless.png"
+  install -Dm644 app/src-tauri/icons/32x32.png "$pkgdir/usr/share/icons/hicolor/32x32/apps/pathless.png"
+  install -Dm644 /dev/stdin "$pkgdir/usr/share/applications/pathless.desktop" <<DESKTOP
+[Desktop Entry]
+Name=PathLess
+Comment=RF path and coverage analysis
+Exec=pathless
+Icon=pathless
+Terminal=false
+Type=Application
+Categories=Utility;HamRadio;Science;
+DESKTOP
+  install -Dm644 LICENSE-MIT "$pkgdir/usr/share/licenses/$pkgname/LICENSE-MIT"
+  install -Dm644 LICENSE-APACHE "$pkgdir/usr/share/licenses/$pkgname/LICENSE-APACHE"
+}

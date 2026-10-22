@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "pathless",
+  "version": "0.1.0",
+  "identifier": "app.pathless.desktop",
+  "build": {
+    "frontendDist": "../ui"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "PathLess — RF Path Analysis",
+        "width": 1500,
+        "height": 950,
+        "minWidth": 1000,
+        "minHeight": 650
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "deb",
+      "appimage",
+      "rpm"
+    ],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/icon.png"
+    ],
+    "category": "Utility",
+    "shortDescription": "RF path and coverage analysis",
+    "license": "MIT OR Apache-2.0",
+    "homepage": "https://github.com/n9tax/PathLess",
+    "copyright": "Copyright (c) 2026 The PathLess Authors",
+    "longDescription": "RF path analysis that finds its own data: draw a polygon and PathLess fetches USGS 3DEP terrain and NLCD clutter, then runs point-to-point link and area coverage analysis (Longley-Rice ITM, ITU-R diffraction, P.530 microwave availability).",
+    "linux": {
+      "deb": {
+        "section": "hamradio",
+        "desktopTemplate": "pathless.desktop"
+      },
+      "rpm": {
+        "release": "1",
+        "desktopTemplate": "pathless.desktop"
+      }
+    }
+  }
+}
